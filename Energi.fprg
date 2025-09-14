@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Energi"/>
+        <attribute name="authors" value="lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-14 06:33:28 PM"/>
+        <attribute name="created" value="bGVub3ZvO0RFU0tUT1AtMlRWTDQ3QTsyMDI1LTA5LTE0OzA1OjMyOjU3IFBNOzI5OTk="/>
+        <attribute name="edited" value="bGVub3ZvO0RFU0tUT1AtMlRWTDQ3QTsyMDI1LTA5LTE0OzA2OjMzOjI4IFBNOzE7MzEwNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Hari kita akan Menghitung energi potensial dan kinetik&quot;" newline="True"/>
+            <output expression="&quot;misal dengan gravitasi 10 m/s^2&quot;" newline="True"/>
+            <declare name="nilaimassa, nilaikecepatan, nilaiketinggian, nilaienergipotensial, nilaienergikinetik, nilaienergimekanik, garivitasi" type="Integer" array="False" size=""/>
+            <output expression="&quot;masukan berapa massa-nya? (dalam bentuk kg)&quot;" newline="True"/>
+            <input variable="nilaimassa"/>
+            <output expression="&quot;masukan berapa kecepatannya? (dalam bentuk m/s^2&quot;" newline="True"/>
+            <input variable="nilaikecepatan"/>
+            <output expression="&quot;masukan berapa ketinggiannya?(dalam bentuk m)&quot;" newline="True"/>
+            <input variable="nilaiketinggian"/>
+            <assign variable="nilaienergipotensial" expression="10*nilaimassa*nilaiketinggian"/>
+            <output expression="&quot;Hasil untuk energi potensial adalah =&quot; &amp;nilaienergipotensial" newline="True"/>
+            <assign variable="nilaienergikinetik" expression="1/2*nilaimassa*nilaikecepatan*nilaikecepatan"/>
+            <output expression="&quot;Hasil untuk energi Kinetik adalah=&quot; &amp; nilaienergikinetik" newline="True"/>
+            <assign variable="nilaienergimekanik" expression="nilaienergipotensial+nilaienergikinetik"/>
+            <output expression="&quot;Hasil untuk energi mekanik adalah=&quot; &amp; nilaienergimekanik" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
